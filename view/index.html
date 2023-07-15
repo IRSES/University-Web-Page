@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konkurs hneu</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="light">
+        <div class="theme-switcher">
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider round"></span>
+            </label>
+            <img class="icon" src="img/theme-switcher.png" alt="Icon">
+        </div>
+        <div class="form-container">
+            <form class="form">
+                <div class="select-container">
+                    <label for="speciality-dropdown" class="speciality-label">Виберіть спеціальність:</label>
+                    <select id="speciality-dropdown">
+                    </select>
+                    <p id="program-placeholder"></p>
+                </div>
+                <div class="subjects-container">
+                    <div class="input-container">
+                        <label>Українська мова:</label>
+                        <input name="ukr-input" type="number" min="100" max="200" step="1" id="ukr-input" class="mark-input" placeholder="Введіть бал" required />
+                        <small class="subject-1-coef coef-label"></small>
+                    </div>
+                    <div class="input-container">
+                        <label>Математика:</label>
+                        <input name="math-input" type="number" min="100" max="200" step="1" id="math-input" class="mark-input" placeholder="Введіть бал" required />
+                        <small class="subject-2-coef coef-label"></small>
+                    </div>
+                    <div class="select-container">
+                        <label>Оберіть третій предмет:</label>
+                        <select id="third-subject">
+                        </select>
+                        <input name="third-sub" type="number" min="100" max="200" step="1" id="third-sub" class="mark-input" placeholder="Введіть бал" required />
+                        <small class="subject-3-coef coef-label"></small>
+                    </div>
+                </div>
+                <div class="result-container">
+                    <button type="submit">Розрахувати бал</button>
+                    <div class="mark-results">
+                        <div class="result"></div>
+                        <div class="min-score">
+                            <p id="score-contract"></p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <footer>
+                <p class="label-below">
+                    Будь ласка, перевірте цю інформацію в приймальній комісії, оскільки ми ненесемо відповідальності 
+                    за коректність уведених даних та розрахунку.
+                </p>
+                <p class="label-below">
+                    Дякуємо, що скористалися нашим сайтом! Розроблено факультетом ІТ у 
+                    <a href="http://www.hneu.edu.ua" target="_blank">
+                        Харківському національному економічному університеті імені Семена Кузнеця
+                    </a>
+                </p>
+                <p class="label-below">
+                    <a href="https://t.me/abitura_2019" target="_blank">
+                        Усі новини у нашому телеграм каналі Абітурієнт
+                    </a>
+                </p>
+            </footer>
+        </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
